@@ -5,7 +5,6 @@ from flask import request, jsonify
 import logging
 
 # Set your OpenAI API key (Make sure to replace this with your actual key or set it using environment variables)
-#openai.api_key = "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"  # Replace with actual OpenAI API key
 load_dotenv(dotenv_path="confidential.env")  # Load environment variables from .env
 
 openai.api_key = os.getenv('openai_api_key')
