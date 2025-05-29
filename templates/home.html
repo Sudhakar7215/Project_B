@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitti - Your Car Consultant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="chatbox-container">
+        <h1>Chitti - Your Car Consultant</h1>
+        <div id="chatbox">
+            <div class="message bot">
+                <div class="bot-icon"></div>
+                <div class="bot-text">Chitti: Hi there, Sir! I'm Chitti, your personal car consultant. How can I assist you today?</div>
+            </div>
+        </div>
+        <div id="typing-indicator-container" class="hidden">
+            <div class="bot-icon"></div>
+            <div class="typing-indicator">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div id="quick-access">
+            <button class="quick-button" onclick="quickReply('Suggest a car under $10,000')">Suggest Car Under Specific Price Range</button>
+            <button class="quick-button" onclick="quickReply('Provide an inspection checklist')">Inspection Checklist</button>
+            <button class="quick-button" onclick="quickReply('What are common issues with used cars?')">Common Issues with Used Cars</button>
+            <button class="quick-button" onclick="quickReply('Recommend fuel-efficient cars')">Fuel-Efficient Cars</button>
+            <button class="quick-button" onclick="quickReply('Guide me on financing options')">Financing Options</button>
+            <button class="quick-button" onclick="quickReply('Give me maintenance tips')">Maintenance Tips</button>
+        </div>
+        <form id="chat-form" onsubmit="submitChat(event)">
+            <input type="text" id="user-input" placeholder="Type your message here..." required>
+            <button id="send-btn">Send</button>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,646 @@
+2025-05-16 11:23:08,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.139:8080
+2025-05-16 11:23:08,326 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-16 11:23:38,023 - INFO - 127.0.0.1 - - [16/May/2025 11:23:38] "GET / HTTP/1.1" 200 -
+2025-05-16 11:23:38,266 - INFO - 127.0.0.1 - - [16/May/2025 11:23:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-16 11:23:38,271 - INFO - 127.0.0.1 - - [16/May/2025 11:23:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-16 11:23:38,283 - INFO - 127.0.0.1 - - [16/May/2025 11:23:38] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 11:23:38,326 - INFO - 127.0.0.1 - - [16/May/2025 11:23:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-16 11:23:48,706 - INFO - 127.0.0.1 - - [16/May/2025 11:23:48] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 11:23:48,707 - DEBUG - User input received: Hi Chitti, How are you
+2025-05-16 11:23:48,777 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:23:48,777 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hi Chitti, How are you"}]}' message='Post details'
+2025-05-16 11:23:48,777 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:23:48,779 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:23:49,733 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:23:49,742 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=292 request_id=req_2ed6a366da739efe1a4eea209de046e3 response_code=200
+2025-05-16 11:23:49,750 - DEBUG - Bot response: Hello, Sir! I'm doing well, thank you for asking. How can I assist you today?
+2025-05-16 11:23:49,751 - INFO - 127.0.0.1 - - [16/May/2025 11:23:49] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:26:04,022 - DEBUG - User input received: Give me maintenance tips
+2025-05-16 11:26:04,023 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:26:04,023 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hi Chitti, How are you"}, {"role": "assistant", "content": "Hello, Sir! I\'m doing well, thank you for asking. How can I assist you today?"}, {"role": "user", "content": "Give me maintenance tips"}]}' message='Post details'
+2025-05-16 11:26:04,023 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:26:04,028 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:26:05,724 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:26:05,725 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1499 request_id=req_7b48e9957ca03aaa3efaf397c004f0e2 response_code=200
+2025-05-16 11:26:05,726 - DEBUG - Bot response: Of course, Sir! Here are some essential maintenance tips to keep your car running smoothly:
+
+1. Regular Oil Changes: Make sure to change your engine oil as per the manufacturer's recommendation to keep the engine well-lubricated.
+
+2. Check Tires: Regularly check tire pressure, tread wear, and alignment to ensure optimal performance and safety.
+
+3. Routine Inspections: Have your car inspected regularly for fluid levels, brakes, lights, and other vital components.
+
+4. Follow Maintenance Schedule: Adhere to the maintenance schedule outlined in your car's owner's manual for timely service.
+
+5. Keep it Clean: Regularly wash your car to maintain its appearance and prevent corrosion.
+
+6. Listen for Unusual Noises: Pay attention to any strange sounds or vibrations, as they could indicate potential issues that need to be addressed.
+
+By following these tips, you can help prolong the life of your vehicle and maintain its performance. If you have any specific questions about maintenance, feel free to ask, Sir!
+2025-05-16 11:26:05,727 - INFO - 127.0.0.1 - - [16/May/2025 11:26:05] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:26:31,452 - DEBUG - User input received: Provide an inspection checklist
+2025-05-16 11:26:31,453 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:26:31,454 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hi Chitti, How are you"}, {"role": "assistant", "content": "Hello, Sir! I\'m doing well, thank you for asking. How can I assist you today?"}, {"role": "user", "content": "Give me maintenance tips"}, {"role": "assistant", "content": "Of course, Sir! Here are some essential maintenance tips to keep your car running smoothly:\\n\\n1. Regular Oil Changes: Make sure to change your engine oil as per the manufacturer\'s recommendation to keep the engine well-lubricated.\\n\\n2. Check Tires: Regularly check tire pressure, tread wear, and alignment to ensure optimal performance and safety.\\n\\n3. Routine Inspections: Have your car inspected regularly for fluid levels, brakes, lights, and other vital components.\\n\\n4. Follow Maintenance Schedule: Adhere to the maintenance schedule outlined in your car\'s owner\'s manual for timely service.\\n\\n5. Keep it Clean: Regularly wash your car to maintain its appearance and prevent corrosion.\\n\\n6. Listen for Unusual Noises: Pay attention to any strange sounds or vibrations, as they could indicate potential issues that need to be addressed.\\n\\nBy following these tips, you can help prolong the life of your vehicle and maintain its performance. If you have any specific questions about maintenance, feel free to ask, Sir!"}, {"role": "user", "content": "Provide an inspection checklist"}]}' message='Post details'
+2025-05-16 11:26:31,454 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:26:31,456 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:26:34,547 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:26:34,549 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2920 request_id=req_8e8b24c61c6c507c6ff04eb4f33485e9 response_code=200
+2025-05-16 11:26:34,550 - DEBUG - Bot response: Certainly, Sir! Here's a basic inspection checklist to help you stay on top of your car's maintenance:
+
+1. Fluid Levels:
+   - Engine oil
+   - Transmission fluid
+   - Brake fluid
+   - Power steering fluid
+   - Coolant
+
+2. Tires:
+   - Tire pressure and condition
+   - Tread depth
+   - Wheel alignment
+
+3. Brakes:
+   - Brake pads and rotors
+   - Brake fluid level
+   - Brake lights
+
+4. Lights and Signals:
+   - Headlights (high and low beams)
+   - Brake lights
+   - Turn signals
+   - Hazard lights
+
+5. Wipers and Washer Fluid:
+   - Windshield wipers condition
+   - Washer fluid level
+
+6. Battery:
+   - Battery terminals cleanliness
+   - Battery voltage and electrolyte level (if applicable)
+
+7. Belts and Hoses:
+   - Condition of drive belts
+   - Inspect hoses for leaks or cracks
+
+8. Suspension and Steering:
+   - Shocks and struts condition
+   - Steering system for any unusual noises or vibrations
+
+9. Exhaust System:
+   - Check for any leaks or unusual noises
+
+10. Interior and Exterior:
+    - Check the interior for any unusual smells or signs of wear
+    - Inspect the exterior for damages or rust spots
+
+By conducting regular inspections using this checklist, you can help ensure that your car is in good working condition and address any potential issues promptly. If you have any specific concerns or need guidance on any particular aspect of your vehicle inspection, feel free to ask, Sir!
+2025-05-16 11:26:34,550 - INFO - 127.0.0.1 - - [16/May/2025 11:26:34] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:31:38,583 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.139:8080
+2025-05-16 11:31:38,583 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-16 11:31:48,722 - INFO - 127.0.0.1 - - [16/May/2025 11:31:48] "GET / HTTP/1.1" 200 -
+2025-05-16 11:31:48,808 - INFO - 127.0.0.1 - - [16/May/2025 11:31:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-16 11:31:48,809 - INFO - 127.0.0.1 - - [16/May/2025 11:31:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-16 11:31:48,815 - INFO - 127.0.0.1 - - [16/May/2025 11:31:48] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 11:32:27,126 - DEBUG - User input received: Hai
+2025-05-16 11:32:27,132 - INFO - 127.0.0.1 - - [16/May/2025 11:32:27] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 11:32:27,233 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:32:27,233 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-16 11:32:27,234 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:32:27,236 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:32:27,728 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:32:27,730 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=320 request_id=req_86424a900957b6360d9e44d0655ce03a response_code=200
+2025-05-16 11:32:27,738 - DEBUG - Bot response: Hello, Sir! How can I assist you with your car-related queries today?
+2025-05-16 11:32:27,738 - INFO - 127.0.0.1 - - [16/May/2025 11:32:27] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:32:47,222 - DEBUG - User input received: Provide an inspection checklist
+2025-05-16 11:32:47,222 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:32:47,222 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello, Sir! How can I assist you with your car-related queries today?"}, {"role": "user", "content": "Provide an inspection checklist"}]}' message='Post details'
+2025-05-16 11:32:47,223 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:32:47,223 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:32:50,871 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:32:50,874 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3502 request_id=req_5f7683667cb3e6582fd515d4033ff99f response_code=200
+2025-05-16 11:32:50,875 - DEBUG - Bot response: Of course, Sir! Here's a basic inspection checklist you can use when looking at a used car:
+
+1. **Exterior**: Check for any signs of rust, scratches, or dents. Inspect the headlights, taillights, and turn signals to ensure they are functioning properly.
+
+2. **Interior**: Look for any tears or stains on the seats and carpets. Check that all the buttons and features inside the car are working, such as the air conditioning, radio, and power windows.
+
+3. **Tires**: Inspect the tread depth and check for any signs of uneven wear. Make sure all tires are properly inflated.
+
+4. **Engine**: Start the car and listen for any unusual noises coming from the engine. Check for any leaks under the hood.
+
+5. **Fluids**: Check the oil, transmission fluid, brake fluid, and coolant levels. Make sure they are at the correct levels and look for any signs of contamination.
+
+6. **Brakes**: Test the brakes by driving at a slow speed and applying them gently. They should feel responsive and not make any unusual sounds.
+
+7. **Suspension**: Take the car for a test drive and listen for any clunking or squeaking noises when going over bumps. The ride should feel smooth and steady.
+
+8. **Documentation**: Ask for the car's service records and check for any recalls or major repairs. Verify that the title is clean and there are no liens on the vehicle.
+
+Remember, it's always a good idea to have a professional mechanic inspect the car before making a purchase to ensure there are no hidden issues. Let me know if you need more assistance with anything else, Sir!
+2025-05-16 11:32:50,875 - INFO - 127.0.0.1 - - [16/May/2025 11:32:50] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:32:53,737 - DEBUG - User input received: What are common issues with used cars?
+2025-05-16 11:32:53,739 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:32:53,740 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello, Sir! How can I assist you with your car-related queries today?"}, {"role": "user", "content": "Provide an inspection checklist"}, {"role": "assistant", "content": "Of course, Sir! Here\'s a basic inspection checklist you can use when looking at a used car:\\n\\n1. **Exterior**: Check for any signs of rust, scratches, or dents. Inspect the headlights, taillights, and turn signals to ensure they are functioning properly.\\n\\n2. **Interior**: Look for any tears or stains on the seats and carpets. Check that all the buttons and features inside the car are working, such as the air conditioning, radio, and power windows.\\n\\n3. **Tires**: Inspect the tread depth and check for any signs of uneven wear. Make sure all tires are properly inflated.\\n\\n4. **Engine**: Start the car and listen for any unusual noises coming from the engine. Check for any leaks under the hood.\\n\\n5. **Fluids**: Check the oil, transmission fluid, brake fluid, and coolant levels. Make sure they are at the correct levels and look for any signs of contamination.\\n\\n6. **Brakes**: Test the brakes by driving at a slow speed and applying them gently. They should feel responsive and not make any unusual sounds.\\n\\n7. **Suspension**: Take the car for a test drive and listen for any clunking or squeaking noises when going over bumps. The ride should feel smooth and steady.\\n\\n8. **Documentation**: Ask for the car\'s service records and check for any recalls or major repairs. Verify that the title is clean and there are no liens on the vehicle.\\n\\nRemember, it\'s always a good idea to have a professional mechanic inspect the car before making a purchase to ensure there are no hidden issues. Let me know if you need more assistance with anything else, Sir!"}, {"role": "user", "content": "What are common issues with used cars?"}]}' message='Post details'
+2025-05-16 11:32:53,741 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:32:53,743 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:32:57,435 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:32:57,472 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3551 request_id=req_f4843d6803268ba9229442978dc3037d response_code=200
+2025-05-16 11:32:57,473 - DEBUG - Bot response: Certainly, Sir! When buying a used car, there are several common issues to watch out for. These may vary depending on the make and model of the car, as well as its maintenance history. Here are some general problems to be aware of:
+
+1. **High Mileage**: The higher the mileage, the more wear and tear on the vehicle's engine, transmission, and other components. This can lead to potential issues down the road.
+
+2. **Rust**: Check for rust on the body of the car, especially in areas prone to rusting, such as the wheel wells, undercarriage, and around the door frames.
+
+3. **Mechanical Issues**: Look out for common mechanical problems like worn-out brakes, suspension issues, transmission problems, and engine leaks.
+
+4. **Electrical Problems**: Check that all electrical components, such as lights, power windows, air conditioning, and infotainment systems, are functioning properly. Electrical issues can be difficult and costly to repair.
+
+5. **Fluid Leaks**: Inspect the car for any signs of leaks, such as oil, coolant, or transmission fluid leaks, which could indicate underlying problems.
+
+6. **Previous Accidents**: Check for signs of previous accidents or repairs, such as mismatched paint, uneven panel gaps, or a bent frame. These could affect the car's structural integrity.
+
+7. **Worn Tires**: Check the condition of the tires, including tread depth and any signs of uneven wear. Worn tires may need to be replaced soon, adding to the overall cost.
+
+8. **Maintenance History**: Ask for the car's service records to ensure it has been well-maintained. A lack of maintenance history or irregular servicing could indicate potential issues.
+
+It's always a good idea to have a trusted mechanic perform a thorough inspection before finalizing a purchase. They can identify any underlying issues that may not be immediately apparent. If you have any specific concerns about a particular used car, feel free to ask, Sir!
+2025-05-16 11:32:57,474 - INFO - 127.0.0.1 - - [16/May/2025 11:32:57] "POST /chat HTTP/1.1" 200 -
+2025-05-16 11:33:06,613 - DEBUG - User input received: Guide me on financing options
+2025-05-16 11:33:06,615 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 11:33:06,615 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello, Sir! How can I assist you with your car-related queries today?"}, {"role": "user", "content": "Provide an inspection checklist"}, {"role": "assistant", "content": "Of course, Sir! Here\'s a basic inspection checklist you can use when looking at a used car:\\n\\n1. **Exterior**: Check for any signs of rust, scratches, or dents. Inspect the headlights, taillights, and turn signals to ensure they are functioning properly.\\n\\n2. **Interior**: Look for any tears or stains on the seats and carpets. Check that all the buttons and features inside the car are working, such as the air conditioning, radio, and power windows.\\n\\n3. **Tires**: Inspect the tread depth and check for any signs of uneven wear. Make sure all tires are properly inflated.\\n\\n4. **Engine**: Start the car and listen for any unusual noises coming from the engine. Check for any leaks under the hood.\\n\\n5. **Fluids**: Check the oil, transmission fluid, brake fluid, and coolant levels. Make sure they are at the correct levels and look for any signs of contamination.\\n\\n6. **Brakes**: Test the brakes by driving at a slow speed and applying them gently. They should feel responsive and not make any unusual sounds.\\n\\n7. **Suspension**: Take the car for a test drive and listen for any clunking or squeaking noises when going over bumps. The ride should feel smooth and steady.\\n\\n8. **Documentation**: Ask for the car\'s service records and check for any recalls or major repairs. Verify that the title is clean and there are no liens on the vehicle.\\n\\nRemember, it\'s always a good idea to have a professional mechanic inspect the car before making a purchase to ensure there are no hidden issues. Let me know if you need more assistance with anything else, Sir!"}, {"role": "user", "content": "What are common issues with used cars?"}, {"role": "assistant", "content": "Certainly, Sir! When buying a used car, there are several common issues to watch out for. These may vary depending on the make and model of the car, as well as its maintenance history. Here are some general problems to be aware of:\\n\\n1. **High Mileage**: The higher the mileage, the more wear and tear on the vehicle\'s engine, transmission, and other components. This can lead to potential issues down the road.\\n\\n2. **Rust**: Check for rust on the body of the car, especially in areas prone to rusting, such as the wheel wells, undercarriage, and around the door frames.\\n\\n3. **Mechanical Issues**: Look out for common mechanical problems like worn-out brakes, suspension issues, transmission problems, and engine leaks.\\n\\n4. **Electrical Problems**: Check that all electrical components, such as lights, power windows, air conditioning, and infotainment systems, are functioning properly. Electrical issues can be difficult and costly to repair.\\n\\n5. **Fluid Leaks**: Inspect the car for any signs of leaks, such as oil, coolant, or transmission fluid leaks, which could indicate underlying problems.\\n\\n6. **Previous Accidents**: Check for signs of previous accidents or repairs, such as mismatched paint, uneven panel gaps, or a bent frame. These could affect the car\'s structural integrity.\\n\\n7. **Worn Tires**: Check the condition of the tires, including tread depth and any signs of uneven wear. Worn tires may need to be replaced soon, adding to the overall cost.\\n\\n8. **Maintenance History**: Ask for the car\'s service records to ensure it has been well-maintained. A lack of maintenance history or irregular servicing could indicate potential issues.\\n\\nIt\'s always a good idea to have a trusted mechanic perform a thorough inspection before finalizing a purchase. They can identify any underlying issues that may not be immediately apparent. If you have any specific concerns about a particular used car, feel free to ask, Sir!"}, {"role": "user", "content": "Guide me on financing options"}]}' message='Post details'
+2025-05-16 11:33:06,616 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 11:33:06,620 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 11:33:10,255 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 11:33:10,257 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3460 request_id=req_2455ebf53a0280b613829c78f2e906d6 response_code=200
+2025-05-16 11:33:10,257 - DEBUG - Bot response: Of course, Sir! When it comes to financing a car, there are several options available to consider. Here are some common financing options you might explore:
+
+1. **Auto Loans**: This is the most common way to finance a car purchase. You can obtain an auto loan through a bank, credit union, or online lender. The lender will provide you with the money to buy the car, and you'll repay the loan amount plus interest over a set period of time.
+
+2. **Dealership Financing**: Many car dealerships offer financing options through affiliated lenders. While convenient, dealership financing may come with higher interest rates. Make sure to compare offers from different lenders to get the best deal.
+
+3. **Credit Unions**: Credit unions often have lower interest rates on auto loans than traditional banks. If you're a member of a credit union, you may be able to get a competitive rate on your car loan.
+
+4. **Online Lenders**: There are online lenders that specialize in auto loans and offer competitive rates. You can apply for a loan online and receive multiple offers to compare.
+
+5. **Leasing**: Leasing a car allows you to drive a new vehicle for a set period of time while making monthly payments. At the end of the lease term, you typically have the option to buy the car or return it.
+
+6. **Personal Loans**: If you have a good credit score, you may be able to qualify for a personal loan to finance a car purchase. Personal loans generally have higher interest rates than auto loans but can be used for various purposes.
+
+Before deciding on a financing option, consider factors like your credit score, budget, down payment amount, and loan terms. Be sure to shop around for the best interest rates and loan terms to find a financing option that suits your needs.
+
+If you have any specific questions or need further guidance on financing a car, feel free to ask, Sir!
+2025-05-16 11:33:10,259 - INFO - 127.0.0.1 - - [16/May/2025 11:33:10] "POST /chat HTTP/1.1" 200 -
+2025-05-16 12:42:47,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.139:8080
+2025-05-16 12:42:47,218 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-16 12:42:58,611 - INFO - 127.0.0.1 - - [16/May/2025 12:42:58] "GET / HTTP/1.1" 200 -
+2025-05-16 12:42:58,773 - INFO - 127.0.0.1 - - [16/May/2025 12:42:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-16 12:42:58,775 - INFO - 127.0.0.1 - - [16/May/2025 12:42:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-16 12:42:58,780 - INFO - 127.0.0.1 - - [16/May/2025 12:42:58] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 12:42:58,804 - INFO - 127.0.0.1 - - [16/May/2025 12:42:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-16 12:43:04,398 - INFO - 127.0.0.1 - - [16/May/2025 12:43:04] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-16 12:43:04,403 - DEBUG - User input received: Suggest a car under $10,000
+2025-05-16 12:43:04,481 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-16 12:43:04,481 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Suggest a car under $10,000"}]}' message='Post details'
+2025-05-16 12:43:04,481 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-16 12:43:04,482 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-16 12:43:06,280 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-16 12:43:06,281 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1070 request_id=req_b2934ab36a870771843feb61ae79e724 response_code=200
+2025-05-16 12:43:06,285 - DEBUG - Bot response: Hello Sir! For a budget of under $10,000, I would recommend looking into compact cars or slightly older midsize sedans. A few reliable options to consider are the Honda Civic, Toyota Corolla, Ford Focus, Hyundai Elantra, or Mazda 3. These cars are known for their durability, fuel efficiency, and overall value for money. You might find some good deals on used models or certified pre-owned vehicles within your budget. Would you like more information on any specific make or model?
+2025-05-16 12:43:06,285 - INFO - 127.0.0.1 - - [16/May/2025 12:43:06] "POST /chat HTTP/1.1" 200 -
+2025-05-22 12:28:09,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:28:09,059 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:31:29,629 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:31:29,629 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:45:43,466 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:45:43,466 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:47:04,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:47:04,926 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:48:34,739 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:48:34,739 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:50:23,283 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 12:50:23,283 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:50:23,284 - INFO -  * Restarting with stat
+2025-05-22 12:50:23,914 - WARNING -  * Debugger is active!
+2025-05-22 12:50:23,918 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 12:53:17,894 - WARNING -  * Debugger is active!
+2025-05-22 12:53:17,894 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 12:53:23,045 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 12:53:23,045 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 12:53:23,045 - INFO -  * Restarting with stat
+2025-05-22 12:53:23,819 - WARNING -  * Debugger is active!
+2025-05-22 12:53:23,823 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 12:53:27,274 - WARNING -  * Debugger is active!
+2025-05-22 12:53:27,274 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:15:02,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 13:15:02,967 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:15:02,984 - INFO -  * Restarting with stat
+2025-05-22 13:15:03,648 - WARNING -  * Debugger is active!
+2025-05-22 13:15:03,652 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:18:26,722 - INFO -  * Detected change in 'C:\\Users\\karla\\Downloads\\Project_B\\app.py', reloading
+2025-05-22 13:18:26,827 - INFO -  * Restarting with stat
+2025-05-22 13:18:27,506 - WARNING -  * Debugger is active!
+2025-05-22 13:18:27,509 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:18:29,055 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:18:29,056 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:18:29,056 - INFO -  * Restarting with stat
+2025-05-22 13:18:29,672 - WARNING -  * Debugger is active!
+2025-05-22 13:18:29,675 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:18:41,254 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:18:41,254 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:18:41,255 - INFO -  * Restarting with stat
+2025-05-22 13:18:41,916 - WARNING -  * Debugger is active!
+2025-05-22 13:18:41,920 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:21:13,204 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:21:13,204 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:21:13,205 - INFO -  * Restarting with stat
+2025-05-22 13:21:13,835 - WARNING -  * Debugger is active!
+2025-05-22 13:21:13,839 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:22:05,216 - INFO -  * Detected change in 'C:\\Users\\karla\\Downloads\\Project_B\\token_usage.py', reloading
+2025-05-22 13:22:05,265 - INFO -  * Restarting with stat
+2025-05-22 13:22:06,040 - WARNING -  * Debugger is active!
+2025-05-22 13:22:06,045 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:32:29,188 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:32:29,188 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:32:29,189 - INFO -  * Restarting with stat
+2025-05-22 13:32:29,801 - WARNING -  * Debugger is active!
+2025-05-22 13:32:29,804 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:35:30,545 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:35:30,545 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:35:30,546 - INFO -  * Restarting with stat
+2025-05-22 13:35:31,145 - WARNING -  * Debugger is active!
+2025-05-22 13:35:31,149 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 13:55:34,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 13:55:34,496 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:55:34,498 - INFO -  * Restarting with stat
+2025-05-22 13:55:35,151 - WARNING -  * Debugger is active!
+2025-05-22 13:55:35,154 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 15:08:31,278 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 15:08:31,278 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 15:08:31,279 - INFO -  * Restarting with stat
+2025-05-22 15:08:31,914 - WARNING -  * Debugger is active!
+2025-05-22 15:08:31,918 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 15:28:46,422 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 15:28:46,422 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 15:28:46,424 - INFO -  * Restarting with stat
+2025-05-22 15:28:47,027 - WARNING -  * Debugger is active!
+2025-05-22 15:28:47,031 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 15:31:13,804 - INFO - 127.0.0.1 - - [22/May/2025 15:31:13] "GET / HTTP/1.1" 200 -
+2025-05-22 15:31:13,873 - INFO - 127.0.0.1 - - [22/May/2025 15:31:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-22 15:31:14,056 - INFO - 127.0.0.1 - - [22/May/2025 15:31:14] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-05-22 15:31:14,188 - INFO - 127.0.0.1 - - [22/May/2025 15:31:14] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:31:14,506 - INFO - 127.0.0.1 - - [22/May/2025 15:31:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-22 15:31:18,528 - INFO - 127.0.0.1 - - [22/May/2025 15:31:18] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:31:18,835 - DEBUG - User input received: Give me maintenance tips
+2025-05-22 15:31:18,899 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-22 15:31:18,899 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Give me maintenance tips"}]}' message='Post details'
+2025-05-22 15:31:18,900 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-22 15:31:18,901 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-22 15:31:20,825 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-22 15:31:20,826 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1450 request_id=req_8a79cc2b9432610a97e4eafef5a555a5 response_code=200
+2025-05-22 15:31:20,836 - DEBUG - Bot response: Hello Sir! I'd be happy to share some maintenance tips with you. Here are a few important things to keep in mind:
+
+1. Regularly check your oil levels and get oil changes as recommended by your vehicle's manufacturer.
+  
+2. Keep an eye on your tire pressure and make sure your tires are properly inflated to improve fuel efficiency and prolong tire life.
+  
+3. Replace your air filter and check other filters in your vehicle, such as the cabin air filter and fuel filter, as needed.
+  
+4. Don't ignore warning lights on your dashboard - they can indicate serious issues that need to be addressed promptly.
+  
+5. Schedule routine inspections and maintenance checks with a qualified mechanic to catch any potential problems early.
+  
+6. Keep your car clean inside and out to prevent dirt and debris from causing damage or corrosion.
+  
+Remember, taking care of your car with regular maintenance not only ensures its longevity but also helps prevent costly repairs down the road. If you have any specific questions about maintenance tasks or need more advice, feel free to ask, Sir!
+2025-05-22 15:31:20,836 - DEBUG - Token usage: {'prompt_tokens': 36, 'completion_tokens': 213, 'total_tokens': 249}
+2025-05-22 15:31:20,836 - DEBUG - Estimated cost: $0.000338
+2025-05-22 15:31:20,837 - INFO - 127.0.0.1 - - [22/May/2025 15:31:20] "POST /chat HTTP/1.1" 200 -
+2025-05-22 15:31:38,063 - DEBUG - User input received: hi
+2025-05-22 15:31:38,063 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-22 15:31:38,063 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Give me maintenance tips"}, {"role": "assistant", "content": "Hello Sir! I\'d be happy to share some maintenance tips with you. Here are a few important things to keep in mind:\\n\\n1. Regularly check your oil levels and get oil changes as recommended by your vehicle\'s manufacturer.\\n  \\n2. Keep an eye on your tire pressure and make sure your tires are properly inflated to improve fuel efficiency and prolong tire life.\\n  \\n3. Replace your air filter and check other filters in your vehicle, such as the cabin air filter and fuel filter, as needed.\\n  \\n4. Don\'t ignore warning lights on your dashboard - they can indicate serious issues that need to be addressed promptly.\\n  \\n5. Schedule routine inspections and maintenance checks with a qualified mechanic to catch any potential problems early.\\n  \\n6. Keep your car clean inside and out to prevent dirt and debris from causing damage or corrosion.\\n  \\nRemember, taking care of your car with regular maintenance not only ensures its longevity but also helps prevent costly repairs down the road. If you have any specific questions about maintenance tasks or need more advice, feel free to ask, Sir!"}, {"role": "user", "content": "hi"}]}' message='Post details'
+2025-05-22 15:31:38,064 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-22 15:31:38,066 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-22 15:31:38,506 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-22 15:31:38,508 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=301 request_id=req_ec3c8b65eb7576793f3357c75ec16ec8 response_code=200
+2025-05-22 15:31:38,509 - DEBUG - Bot response: Hello again, Sir! How can I assist you today?
+2025-05-22 15:31:38,509 - DEBUG - Token usage: {'prompt_tokens': 258, 'completion_tokens': 12, 'total_tokens': 270}
+2025-05-22 15:31:38,509 - DEBUG - Estimated cost: $0.000147
+2025-05-22 15:31:38,510 - INFO - 127.0.0.1 - - [22/May/2025 15:31:38] "POST /chat HTTP/1.1" 200 -
+2025-05-22 15:32:19,750 - DEBUG - User input received: Can i know cars under 10K
+2025-05-22 15:32:19,750 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-22 15:32:19,750 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Give me maintenance tips"}, {"role": "assistant", "content": "Hello Sir! I\'d be happy to share some maintenance tips with you. Here are a few important things to keep in mind:\\n\\n1. Regularly check your oil levels and get oil changes as recommended by your vehicle\'s manufacturer.\\n  \\n2. Keep an eye on your tire pressure and make sure your tires are properly inflated to improve fuel efficiency and prolong tire life.\\n  \\n3. Replace your air filter and check other filters in your vehicle, such as the cabin air filter and fuel filter, as needed.\\n  \\n4. Don\'t ignore warning lights on your dashboard - they can indicate serious issues that need to be addressed promptly.\\n  \\n5. Schedule routine inspections and maintenance checks with a qualified mechanic to catch any potential problems early.\\n  \\n6. Keep your car clean inside and out to prevent dirt and debris from causing damage or corrosion.\\n  \\nRemember, taking care of your car with regular maintenance not only ensures its longevity but also helps prevent costly repairs down the road. If you have any specific questions about maintenance tasks or need more advice, feel free to ask, Sir!"}, {"role": "user", "content": "hi"}, {"role": "assistant", "content": "Hello again, Sir! How can I assist you today?"}, {"role": "user", "content": "Can i know cars under 10K"}]}' message='Post details'
+2025-05-22 15:32:19,750 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-22 15:32:19,752 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-22 15:32:21,559 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-22 15:32:21,564 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1637 request_id=req_72feba4059711e27b9e254bc3e5b53ec response_code=200
+2025-05-22 15:32:21,565 - DEBUG - Bot response: Of course, Sir! There are plenty of good options available if you're looking for a reliable car under $10,000. Here are a few popular choices that are known for their affordability and durability:
+
+1. Honda Civic - Known for its reliability, fuel efficiency, and low maintenance costs.
+  
+2. Toyota Corolla - Another great option with a reputation for longevity and strong resale value.
+  
+3. Ford Focus - A compact car that offers good fuel efficiency and a comfortable ride.
+  
+4. Hyundai Elantra - Value-packed with a spacious interior, plenty of features, and a user-friendly infotainment system.
+  
+5. Nissan Versa - A budget-friendly option with good fuel economy and a surprisingly spacious cabin.
+  
+6. Mazda3 - Offers a balance of sportiness, fuel efficiency, and a well-crafted interior.
+  
+These are just a few examples, Sir. It's always a good idea to research and test drive different models to find the one that best suits your needs and preferences. If you have any specific requirements or preferences in mind, please let me know so I can provide more tailored recommendations for you.
+2025-05-22 15:32:21,565 - DEBUG - Token usage: {'prompt_tokens': 286, 'completion_tokens': 230, 'total_tokens': 516}
+2025-05-22 15:32:21,565 - DEBUG - Estimated cost: $0.000488
+2025-05-22 15:32:21,565 - INFO - 127.0.0.1 - - [22/May/2025 15:32:21] "POST /chat HTTP/1.1" 200 -
+2025-05-22 15:36:12,150 - INFO -  * Detected change in 'C:\\Users\\karla\\Downloads\\Project_B\\app.py', reloading
+2025-05-22 15:36:12,205 - INFO -  * Restarting with stat
+2025-05-22 15:36:12,921 - WARNING -  * Debugger is active!
+2025-05-22 15:36:12,925 - INFO -  * Debugger PIN: 118-778-805
+2025-05-22 15:36:21,794 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 15:36:21,794 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 15:36:49,547 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 15:36:49,547 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 15:37:26,847 - INFO - 127.0.0.1 - - [22/May/2025 15:37:26] "GET / HTTP/1.1" 200 -
+2025-05-22 15:37:26,903 - INFO - 127.0.0.1 - - [22/May/2025 15:37:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-22 15:37:27,094 - INFO - 127.0.0.1 - - [22/May/2025 15:37:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-22 15:37:27,224 - INFO - 127.0.0.1 - - [22/May/2025 15:37:27] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:37:29,388 - DEBUG - User input received: Suggest a car under $10,000
+2025-05-22 15:37:29,390 - INFO - 127.0.0.1 - - [22/May/2025 15:37:29] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:37:29,459 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-22 15:37:29,460 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Suggest a car under $10,000"}]}' message='Post details'
+2025-05-22 15:37:29,460 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-22 15:37:29,461 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-22 15:37:30,458 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-22 15:37:30,459 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=834 request_id=req_76257881bbf86fba4eb73fd59b8f0a5b response_code=200
+2025-05-22 15:37:30,465 - DEBUG - Bot response: Good day, Sir! I'd be happy to help you find a car under $10,000. Are you looking for something specific like a sedan, SUV, or maybe a hatchback? Let me know your preferences so I can provide you with some recommendations.
+2025-05-22 15:37:30,465 - DEBUG - Token usage: {'prompt_tokens': 41, 'completion_tokens': 53, 'total_tokens': 94}
+2025-05-22 15:37:30,465 - DEBUG - Estimated cost: $0.0001
+2025-05-22 15:37:30,466 - INFO - 127.0.0.1 - - [22/May/2025 15:37:30] "POST /chat HTTP/1.1" 200 -
+2025-05-22 15:40:29,149 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.77:8080
+2025-05-22 15:40:29,150 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 15:40:38,058 - INFO - 127.0.0.1 - - [22/May/2025 15:40:38] "GET / HTTP/1.1" 200 -
+2025-05-22 15:40:38,357 - INFO - 127.0.0.1 - - [22/May/2025 15:40:38] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-05-22 15:40:38,361 - INFO - 127.0.0.1 - - [22/May/2025 15:40:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-22 15:40:38,371 - INFO - 127.0.0.1 - - [22/May/2025 15:40:38] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:40:38,406 - INFO - 127.0.0.1 - - [22/May/2025 15:40:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-22 15:40:41,163 - INFO - 127.0.0.1 - - [22/May/2025 15:40:41] "GET / HTTP/1.1" 200 -
+2025-05-22 15:40:41,196 - INFO - 127.0.0.1 - - [22/May/2025 15:40:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-22 15:40:41,197 - INFO - 127.0.0.1 - - [22/May/2025 15:40:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-22 15:40:41,213 - INFO - 127.0.0.1 - - [22/May/2025 15:40:41] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:40:43,992 - INFO - 127.0.0.1 - - [22/May/2025 15:40:43] "GET / HTTP/1.1" 200 -
+2025-05-22 15:40:44,025 - INFO - 127.0.0.1 - - [22/May/2025 15:40:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-22 15:40:44,025 - INFO - 127.0.0.1 - - [22/May/2025 15:40:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-22 15:40:44,033 - INFO - 127.0.0.1 - - [22/May/2025 15:40:44] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:40:48,375 - DEBUG - User input received: HI
+2025-05-22 15:40:48,378 - INFO - 127.0.0.1 - - [22/May/2025 15:40:48] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-22 15:40:48,437 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-22 15:40:48,437 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "HI"}]}' message='Post details'
+2025-05-22 15:40:48,437 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-22 15:40:48,438 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-22 15:40:49,153 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-22 15:40:49,154 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=426 request_id=req_a85131aa454ac59fbb585fd4a18102fc response_code=200
+2025-05-22 15:40:49,160 - DEBUG - Bot response: Hello, Sir! How can I assist you today?
+2025-05-22 15:40:49,160 - DEBUG - Token usage: {'prompt_tokens': 33, 'completion_tokens': 11, 'total_tokens': 44}
+2025-05-22 15:40:49,160 - DEBUG - Estimated cost: $3.3e-05
+2025-05-22 15:40:49,160 - INFO - 127.0.0.1 - - [22/May/2025 15:40:49] "POST /chat HTTP/1.1" 200 -
+2025-05-29 12:22:37,491 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.132:8080
+2025-05-29 12:22:37,492 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 12:22:42,562 - INFO - 127.0.0.1 - - [29/May/2025 12:22:42] "GET / HTTP/1.1" 200 -
+2025-05-29 12:22:42,737 - INFO - 127.0.0.1 - - [29/May/2025 12:22:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-29 12:22:42,739 - INFO - 127.0.0.1 - - [29/May/2025 12:22:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-29 12:22:42,745 - INFO - 127.0.0.1 - - [29/May/2025 12:22:42] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 12:22:42,782 - INFO - 127.0.0.1 - - [29/May/2025 12:22:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-29 12:22:48,165 - DEBUG - User input received: Provide an inspection checklist
+2025-05-29 12:22:48,167 - INFO - 127.0.0.1 - - [29/May/2025 12:22:48] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 12:22:48,229 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:22:48,229 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Provide an inspection checklist"}]}' message='Post details'
+2025-05-29 12:22:48,229 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:22:48,230 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:22:50,619 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:22:50,626 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1518 request_id=req_0e9113badfeee2bb69d66d4598df1232 response_code=200
+2025-05-29 12:22:50,632 - DEBUG - Bot response: Of course, Sir! Here is a basic inspection checklist you can use when looking at a car:
+
+1. Check the exterior for any dents, scratches, or rust.
+2. Look at the tires for tread wear and make sure they are properly inflated.
+3. Inspect the lights (headlights, taillights, turn signals) to ensure they are all working.
+4. Check the windshield and other windows for any cracks or chips.
+5. Look under the hood for any leaks or signs of damage.
+6. Test the brakes by listening for any unusual noises and feeling for any vibrations.
+7. Check the interior for any wear and tear, and test all features such as the air conditioning, radio, and power windows.
+8. Test drive the car to check for any unusual noises, vibrations, or handling issues.
+
+Remember, it's always a good idea to have a certified mechanic perform a thorough inspection before purchasing a used car. Let me know if you need any more assistance, Sir!
+2025-05-29 12:22:50,632 - DEBUG - Token usage: {'prompt_tokens': 36, 'completion_tokens': 202, 'total_tokens': 238}
+2025-05-29 12:22:50,632 - DEBUG - Estimated cost: $0.000321
+2025-05-29 12:22:50,632 - INFO - 127.0.0.1 - - [29/May/2025 12:22:50] "POST /chat HTTP/1.1" 200 -
+2025-05-29 12:42:50,672 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:42:50,673 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}]}' message='Post details'
+2025-05-29 12:42:50,673 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:42:50,676 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:42:51,368 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:42:51,370 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=295 request_id=req_8382da3717d178bb0ddc52329bf51d81 response_code=200
+2025-05-29 12:43:03,906 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:43:03,907 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}, {"role": "assistant", "content": "Hello! How can I help you today?"}, {"role": "user", "content": "how are you"}]}' message='Post details'
+2025-05-29 12:43:03,907 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:43:03,912 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:43:04,626 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:43:04,632 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=521 request_id=req_33baaf1d4391b3f01b46d62f2a0fe0a3 response_code=200
+2025-05-29 12:43:23,739 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:43:23,740 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}, {"role": "assistant", "content": "Hello! How can I help you today?"}, {"role": "user", "content": "how are you"}, {"role": "assistant", "content": "I\'m just a program so I don\'t have feelings, but I\'m here and ready to assist you. How can I help you today?"}, {"role": "user", "content": "you know about cars"}]}' message='Post details'
+2025-05-29 12:43:23,741 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:43:23,745 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:43:24,792 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:43:24,793 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=836 request_id=req_9aba0338adc0245a3c781d913e2f4be1 response_code=200
+2025-05-29 12:47:53,785 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:47:53,786 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 12:47:53,786 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:47:53,789 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:47:54,538 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:47:54,540 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=373 request_id=req_6f9024bb7aeb2c8cda8a56939255f502 response_code=200
+2025-05-29 12:48:14,402 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:48:14,402 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "can you give me cars list under 5k"}]}' message='Post details'
+2025-05-29 12:48:14,403 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:48:14,404 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:48:16,009 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:48:16,012 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1428 request_id=req_f96fc98bb6992d1d46993932eb37ecc5 response_code=200
+2025-05-29 12:50:31,217 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:50:31,218 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 12:50:31,218 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:50:31,219 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:50:31,599 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:50:31,601 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=217 request_id=req_4e43e0aa4730a63ef1cf59db167c8aec response_code=200
+2025-05-29 12:53:08,623 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.132:8080
+2025-05-29 12:53:08,623 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 12:53:12,305 - INFO - 127.0.0.1 - - [29/May/2025 12:53:12] "GET / HTTP/1.1" 200 -
+2025-05-29 12:53:12,515 - INFO - 127.0.0.1 - - [29/May/2025 12:53:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-29 12:53:12,516 - INFO - 127.0.0.1 - - [29/May/2025 12:53:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-29 12:53:12,523 - INFO - 127.0.0.1 - - [29/May/2025 12:53:12] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 12:53:12,559 - INFO - 127.0.0.1 - - [29/May/2025 12:53:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-29 12:53:18,598 - DEBUG - User input received: hai
+2025-05-29 12:53:18,599 - INFO - 127.0.0.1 - - [29/May/2025 12:53:18] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 12:53:18,651 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:53:18,651 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "hai"}]}' message='Post details'
+2025-05-29 12:53:18,651 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:53:18,652 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:53:19,167 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:53:19,169 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=304 request_id=req_8d5e5b409b1d62825265448bd0147388 response_code=200
+2025-05-29 12:53:19,174 - DEBUG - Bot response: Hello Sir! How can I assist you today?
+2025-05-29 12:53:19,174 - DEBUG - Token usage: {'prompt_tokens': 33, 'completion_tokens': 10, 'total_tokens': 43}
+2025-05-29 12:53:19,174 - DEBUG - Estimated cost: $3.1e-05
+2025-05-29 12:53:19,175 - INFO - 127.0.0.1 - - [29/May/2025 12:53:19] "POST /chat HTTP/1.1" 200 -
+2025-05-29 12:53:29,200 - DEBUG - User input received: how are you
+2025-05-29 12:53:29,200 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 12:53:29,200 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "hai"}, {"role": "assistant", "content": "Hello Sir! How can I assist you today?"}, {"role": "user", "content": "how are you"}]}' message='Post details'
+2025-05-29 12:53:29,201 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 12:53:29,204 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 12:53:30,128 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 12:53:30,137 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=669 request_id=req_aeda861464f133f64227a0c7ddfa6b36 response_code=200
+2025-05-29 12:53:30,138 - DEBUG - Bot response: I'm just a virtual assistant, Sir, so I don't have feelings, but thanks for asking! How can I help you with your car-related questions or concerns today?
+2025-05-29 12:53:30,138 - DEBUG - Token usage: {'prompt_tokens': 54, 'completion_tokens': 35, 'total_tokens': 89}
+2025-05-29 12:53:30,139 - DEBUG - Estimated cost: $8e-05
+2025-05-29 12:53:30,139 - INFO - 127.0.0.1 - - [29/May/2025 12:53:30] "POST /chat HTTP/1.1" 200 -
+2025-05-29 13:01:03,086 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:01:03,087 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}]}' message='Post details'
+2025-05-29 13:01:03,087 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:01:03,089 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:01:03,633 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:01:03,635 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=289 request_id=req_9d4254582171b17edf962f74a5b106ab response_code=200
+2025-05-29 13:01:12,268 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:01:12,269 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "How are you doing"}]}' message='Post details'
+2025-05-29 13:01:12,269 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:01:12,273 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:01:12,799 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:01:12,801 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=352 request_id=req_bea0df23ff596f8ef8ab66e995d03db4 response_code=200
+2025-05-29 13:01:24,382 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:01:24,382 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai chitti"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "How are you doing"}, {"role": "assistant", "content": "I\'m doing great, thank you for asking! How can I help you with cars today?"}, {"role": "user", "content": "list out some cars under 5K"}]}' message='Post details'
+2025-05-29 13:01:24,383 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:01:24,386 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:01:25,698 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:01:25,706 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1167 request_id=req_fba36b1d73ffb4b31ee73d4c507489b6 response_code=200
+2025-05-29 13:15:03,594 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.132:8080
+2025-05-29 13:15:03,594 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 13:15:10,279 - INFO - 127.0.0.1 - - [29/May/2025 13:15:10] "GET / HTTP/1.1" 200 -
+2025-05-29 13:15:10,444 - INFO - 127.0.0.1 - - [29/May/2025 13:15:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-29 13:15:10,445 - INFO - 127.0.0.1 - - [29/May/2025 13:15:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-29 13:15:10,451 - INFO - 127.0.0.1 - - [29/May/2025 13:15:10] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 13:15:10,472 - INFO - 127.0.0.1 - - [29/May/2025 13:15:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-29 13:15:14,307 - INFO - 127.0.0.1 - - [29/May/2025 13:15:14] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 13:15:14,310 - DEBUG - User input received: What are common issues with used cars?
+2025-05-29 13:15:14,355 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:15:14,355 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "What are common issues with used cars?"}]}' message='Post details'
+2025-05-29 13:15:14,355 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:15:14,356 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:15:17,736 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:15:17,743 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3171 request_id=req_6406b01a83e0a7408f3fc68cf768b949 response_code=200
+2025-05-29 13:15:17,750 - DEBUG - Bot response: Hello, Sir! When looking at used cars, there are a few common issues to watch out for. Some of them include:
+
+1. **High mileage**: A car with high mileage may have more wear and tear on its components, which could lead to potential problems down the line.
+
+2. **Accident history**: Check the car's history report to see if it has been in any accidents. Sometimes, damage from accidents can lead to underlying issues.
+
+3. **Mechanical problems**: It's always a good idea to have a mechanic inspect the car to check for any mechanical issues such as engine problems, transmission issues, or suspension issues.
+
+4. **Rust and corrosion**: Check the car's body for any signs of rust or corrosion, especially in areas prone to rusting, such as the undercarriage and wheel wells.
+
+5. **Electrical issues**: Look out for any electrical problems such as malfunctioning lights, power windows, or stereo system.
+
+6. **Fluid leaks**: Inspect the ground underneath the car for any signs of leaking fluids, such as oil, coolant, or transmission fluid.
+
+Remember, Sir, a thorough inspection and test drive can help you uncover many of these issues before making a purchase. Let me know if you need any more help or information!
+2025-05-29 13:15:17,750 - DEBUG - Token usage: {'prompt_tokens': 40, 'completion_tokens': 259, 'total_tokens': 299}
+2025-05-29 13:15:17,750 - DEBUG - Estimated cost: $0.000409
+2025-05-29 13:15:17,751 - INFO - 127.0.0.1 - - [29/May/2025 13:15:17] "POST /chat HTTP/1.1" 200 -
+2025-05-29 13:16:14,091 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:16:14,091 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 13:16:14,092 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:16:14,094 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:16:14,564 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:16:14,567 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=304 request_id=req_ccc622b0a0b4c059578aafd0d9471ecd response_code=200
+2025-05-29 13:18:22,079 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:18:22,079 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hai"}]}' message='Post details'
+2025-05-29 13:18:22,080 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:18:22,082 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:18:22,956 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:18:22,958 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=641 request_id=req_11178d25c85d44f8346234e78d60371c response_code=200
+2025-05-29 13:18:41,901 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:18:41,901 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hai"}, {"role": "assistant", "content": "Hello! How can I help you today?"}, {"role": "user", "content": "you have knowledge about BMW cars"}]}' message='Post details'
+2025-05-29 13:18:41,901 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:18:41,904 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:18:42,808 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:18:42,809 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=762 request_id=req_cca8b3b95d0e9046fa88455d041dbd35 response_code=200
+2025-05-29 13:20:17,003 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:20:17,003 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hai"}, {"role": "assistant", "content": "Hello! How can I help you today?"}, {"role": "user", "content": "you have knowledge about BMW cars"}, {"role": "assistant", "content": "Yes, I have knowledge about BMW cars. BMW, which stands for Bayerische Motoren Werke AG, is a German automobile manufacturer known for producing luxury vehicles, sports cars, and motorcycles. They are known for their high-performance engines, innovative technology, and sleek designs. Let me know if you have any specific questions about BMW cars."}, {"role": "user", "content": "nice"}]}' message='Post details'
+2025-05-29 13:20:17,003 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:20:17,005 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:20:17,744 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:20:17,746 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=551 request_id=req_174ef2384ce8bfb322930538dff9caa0 response_code=200
