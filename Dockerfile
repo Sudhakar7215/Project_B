@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 8501
 
 # Run the application
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501","--server.adress=0.0.0.0"]
