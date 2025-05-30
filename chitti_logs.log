@@ -644,3 +644,79 @@ Remember, Sir, a thorough inspection and test drive can help you uncover many of
 2025-05-29 13:20:17,005 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
 2025-05-29 13:20:17,744 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
 2025-05-29 13:20:17,746 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=551 request_id=req_174ef2384ce8bfb322930538dff9caa0 response_code=200
+2025-05-29 13:54:57,918 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:54:57,918 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 13:54:57,918 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:54:57,921 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:54:58,608 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:54:58,610 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=292 request_id=req_13affc54bbefb2c5ebb986cabb826c1d response_code=200
+2025-05-29 13:55:48,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.24.63.132:8080
+2025-05-29 13:55:48,333 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 13:55:54,613 - INFO - 127.0.0.1 - - [29/May/2025 13:55:54] "GET / HTTP/1.1" 200 -
+2025-05-29 13:55:54,800 - INFO - 127.0.0.1 - - [29/May/2025 13:55:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-29 13:55:54,803 - INFO - 127.0.0.1 - - [29/May/2025 13:55:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-29 13:55:54,809 - INFO - 127.0.0.1 - - [29/May/2025 13:55:54] "[33mGET /static/images/bot-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 13:55:54,823 - INFO - 127.0.0.1 - - [29/May/2025 13:55:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-29 13:55:58,707 - INFO - 127.0.0.1 - - [29/May/2025 13:55:58] "[33mGET /static/images/user-icon.png HTTP/1.1[0m" 404 -
+2025-05-29 13:55:58,710 - DEBUG - User input received: Hai
+2025-05-29 13:55:58,769 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 13:55:58,769 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a friendly, conversational car consultant named Chitti who always addresses the user as \'Sir\'."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 13:55:58,769 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 13:55:58,770 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 13:55:59,350 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 13:55:59,357 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=351 request_id=req_dba5749128df516369fbfcdd86a98bda response_code=200
+2025-05-29 13:55:59,363 - DEBUG - Bot response: Hello, Sir! How can I assist you today?
+2025-05-29 13:55:59,364 - DEBUG - Token usage: {'prompt_tokens': 34, 'completion_tokens': 11, 'total_tokens': 45}
+2025-05-29 13:55:59,364 - DEBUG - Estimated cost: $3.4e-05
+2025-05-29 13:55:59,364 - INFO - 127.0.0.1 - - [29/May/2025 13:55:59] "POST /chat HTTP/1.1" 200 -
+2025-05-29 15:04:40,115 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:04:40,115 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 15:04:40,115 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:04:40,117 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:04:44,188 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:04:44,196 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=593 request_id=req_a3ad17cd3cd6b950bb2950e05b1d9241 response_code=200
+2025-05-29 15:04:50,917 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:04:50,918 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello! How can I help you today?"}, {"role": "user", "content": "How are you"}]}' message='Post details'
+2025-05-29 15:04:50,918 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:04:50,919 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:04:51,461 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:04:51,469 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=378 request_id=req_2b64be32c1a73d8a57bafb04a4d08719 response_code=200
+2025-05-29 15:42:56,954 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:42:56,956 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hello"}]}' message='Post details'
+2025-05-29 15:42:56,956 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:42:56,958 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:42:58,079 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:42:58,083 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=692 request_id=req_ae97c8c764d8e0e2818b6f41d3ef4842 response_code=200
+2025-05-29 15:43:05,345 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:43:05,346 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hello"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "are you feeling ok"}]}' message='Post details'
+2025-05-29 15:43:05,346 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:43:05,347 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:43:05,884 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:43:05,885 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=351 request_id=req_9235ad68750502c301aa3079c3a8bc63 response_code=200
+2025-05-29 15:43:19,734 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:43:19,734 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hello"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "are you feeling ok"}, {"role": "assistant", "content": "I\'m an AI and I don\'t have feelings, but thank you for asking! How can I help you today?"}, {"role": "user", "content": "alright! see you later"}]}' message='Post details'
+2025-05-29 15:43:19,735 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:43:19,737 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:43:20,227 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:43:20,228 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=328 request_id=req_90e832f5ec486cb0ef8f2c8292257ba8 response_code=200
+2025-05-29 15:43:55,362 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:43:55,362 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}]}' message='Post details'
+2025-05-29 15:43:55,362 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:43:55,363 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:43:56,518 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:43:56,525 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=227 request_id=req_3391e84272ffcf8beac3d39cf8888513 response_code=200
+2025-05-29 15:45:18,411 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:45:18,412 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "Hai"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "how are you"}]}' message='Post details'
+2025-05-29 15:45:18,412 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:45:18,413 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:45:18,836 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:45:18,839 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=272 request_id=req_181b0129debeeb6804688f36dcea5415 response_code=200
+2025-05-29 15:45:34,219 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2025-05-29 15:45:34,219 - DEBUG - api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are Chitti, an expert in cars."}, {"role": "user", "content": "hello"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "are you feeling ok"}, {"role": "assistant", "content": "I\'m an AI and I don\'t have feelings, but thank you for asking! How can I help you today?"}, {"role": "user", "content": "alright! see you later"}, {"role": "assistant", "content": "Goodbye! Feel free to return if you have more questions in the future. Have a great day!"}, {"role": "user", "content": "how are you"}]}' message='Post details'
+2025-05-29 15:45:34,220 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-29 15:45:34,221 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2025-05-29 15:45:35,177 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-05-29 15:45:35,178 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=742 request_id=req_0a42798cf85e0bd86ee3984913be8057 response_code=200
